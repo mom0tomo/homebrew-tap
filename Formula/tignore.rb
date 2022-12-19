@@ -17,7 +17,7 @@ class Tignore < Formula
 
   def install
     if build.head?
-      system 'make', 'build'
+      system 'go', 'build'
     end
     bin.install 'tignore'
   end
